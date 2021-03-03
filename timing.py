@@ -6,4 +6,4 @@ def calculate_time(func):
         new_time = time.time()
         x = new_time - current_time
         print(f'Total time {x}')
-return wrapper
+    return wrapper
