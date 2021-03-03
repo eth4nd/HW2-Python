@@ -9,5 +9,5 @@ def calculate_time(func):
     return wrapper
 
 @my_decorator
-def time.sleep():
+def time_sleep():
     func_sleep()
