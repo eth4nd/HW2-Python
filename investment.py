@@ -1,6 +1,6 @@
 def calculate_apr(principal, interest_rate, years):
     for i in range(years):
-        total_value = principal*((i+interest_rate)**years)
+        total_value = principal*((i+interest_rate)**i)
         total_value = float(total_value)
         output = isinstance(total_value, float)
         if output:
