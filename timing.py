@@ -8,6 +8,6 @@ def calculate_time(func):
         print(f'Total time {x}')
     return wrapper
 
-@my_decorator
+@calculate_time
 def time_sleep():
-    func_sleep()
+    time.sleep(2)
