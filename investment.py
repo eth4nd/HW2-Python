@@ -4,8 +4,8 @@ def calculate_apr(principal, interest_rate, years):
         total_value = float(total_value)
         output = isinstance(total_value, float)
         if output:
-           print(total_value)
+           return total_value
         else:
-           print("False")
+           return False
 
 calculate_apr(500, .03, 65)
