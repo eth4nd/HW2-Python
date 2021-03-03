@@ -1,4 +1,4 @@
-from time import localtime
+import time
 def calculate_time(func):
     def wrapper():
         currrent_time = time.time()
