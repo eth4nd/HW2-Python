@@ -3,7 +3,7 @@ def calculate_apr(principal, interest_rate, years):
     Calculates how much money to make on an investment. 
     """
 
-    #Condtion in place, just in case interest is a negative number. 
+    #Condtion in place just in case interest is a negative number. 
     if interest_rate < 0:
        return False
     else:

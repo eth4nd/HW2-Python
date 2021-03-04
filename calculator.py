@@ -2,7 +2,7 @@ def calculator(number1, number2, operator):
     """
     A program that simulates like a calculator. 
     """
-    #Will only perform the operation that the input gives.
+    #This will only perform the operation that the input gives.
     if operator == '+':
        return (number1 + number2)
     elif operator == '-':

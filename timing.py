@@ -17,6 +17,6 @@ def calculate_time(func):
 @calculate_time
 def time_sleep():
     """
-    Suspends execution for specified number of seconds. 
+    Suspends execution for a specified number of seconds. 
     """
     time.sleep(2)
