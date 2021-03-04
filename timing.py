@@ -1,6 +1,12 @@
 import time
 def calculate_time(func):
+    """
+    A decorator that calculates the time to run a function.
+    """
     def wrapper():
+        """
+        Wraps the function to extend behavior of wrapped function.
+        """
         x  = time.time()
         func()
         new_time = time.time()
@@ -10,4 +16,7 @@ def calculate_time(func):
 
 @calculate_time
 def time_sleep():
+    """
+    Suspends execution for specified number of seconds. 
+    """
     time.sleep(2)
