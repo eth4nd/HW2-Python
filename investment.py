@@ -4,9 +4,13 @@ def calculate_apr(principal, interest_rate, years):
     """
 
     #Condtion in place just in case interest is a negative number. 
-    if interest_rate < 0:
+    if principal < 0 or interest_rate < 0 or years < 0:
        return False
     else:
+       principal = float(principal)
+       interest_rate = float(interest_rate)
+       if years == 0:
+          return 0
        #Loops through the amount of years to find the total value. 
        for i in range(years):
            total_value = (principal)*((1+interest_rate)**years)
